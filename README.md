@@ -88,6 +88,7 @@ et refléter les dernières tendances du web.
 
 ## Chartre graphique:
 
+
 ![1](https://github.com/user-attachments/assets/13b97df0-17af-44b6-9aa8-3394566e5424)
 ![2](https://github.com/user-attachments/assets/b24cb415-4b5d-4c97-910e-a06e43344c7d)
 ![3](https://github.com/user-attachments/assets/9213d6fd-f8bc-4949-a234-fc19b5b732eb)
@@ -98,6 +99,13 @@ et refléter les dernières tendances du web.
 ## Use case:
 
 ## Wireframe:
+
+
+![desktop_accueil](https://github.com/user-attachments/assets/6827e8c6-8c28-46ac-b7b9-5943d78a3c76)
+![desktop_projets](https://github.com/user-attachments/assets/32c558a1-a06b-4092-a707-575acc4b8dbf)
+![desktop_contact](https://github.com/user-attachments/assets/73997fef-bfc1-4949-a992-0a16c9ceefc5)
+![mobile](https://github.com/user-attachments/assets/df058c7f-7aad-4d9b-b05a-f81d0c879e14)
+
 
 ## Maquettage
 
