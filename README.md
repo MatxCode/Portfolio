@@ -110,13 +110,8 @@ et refléter les dernières tendances du web.
 ## Maquettage
 
 
-
-
-
-
-
-
-
-
-
+![desktop_accueil_maquette](https://github.com/user-attachments/assets/6cee3ef3-c756-4f34-9656-417e69cd2354)
+![desktop_projets_maquette](https://github.com/user-attachments/assets/8c47cc6b-8c27-4caf-a565-94ea7169ebb1)
+![desktop_contact_maquette](https://github.com/user-attachments/assets/d5fb2b65-5f2c-4a50-adca-a58efda46991)
+![mobile_maquette](https://github.com/user-attachments/assets/bc9d3516-9646-412b-8117-627ec12505a6)
 
