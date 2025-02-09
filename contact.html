@@ -27,28 +27,33 @@
         <main>
             <form action="" method="get">
                 <div class="contact-container">
-                    <h2>CONTACT</h2>
-                    <div class="name-container">
-                        <div class="name">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name" required />
+                    <h1>CONTACT</h1>
+                    <div class="contact-form">
+                        <div class="name-container">
+                            <div class="name-box">
+                                <div class="name">
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name" id="name" class="first-last-name" required />
+                                </div>
+                                <div class="name">
+                                    <label for="last-name">Last name</label>
+                                    <input type="text" name="last-name" id="last-name" class="first-last-name" required />
+                                </div>
+                            </div>
                         </div>
-                        <div class="name">
-                            <label for="last-name">Last name</label>
-                            <input type="text" name="last-name" id="last-name" required />
+                        <div class="message-container">
+                            <div class="message-box">
+                                <label for="email">Email</label>
+                                <input type="text" name="email" id="email" required />
+                            </div>
                         </div>
-                    </div>
-                    <div class="email-container">
-                        <label for="email">Email</label>
-                        <div>
-                            <input type="text" name="email" id="email" required />
+                        <div class="message-container">
+                            <div class="message-box">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" required></textarea>
+                            </div>
                         </div>
-                    </div>
-                    <div class="message-container">
-                        <div class="message-box">
-                            <label for="message">Message</label>
-                            <input type="text" name="message" id="message" required />
-                        </div>
+                        <button type="submit" class="send-button">Send</button>
                     </div>
                 </div>
             </form>
