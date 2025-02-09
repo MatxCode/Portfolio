@@ -7,11 +7,17 @@
     background-color: #1F1F1F;
 }
 
-body
+html, body
 {
-    position: absolute;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main
+{
+    flex: 1;
 }
 
 /* HEADER */
@@ -167,15 +173,6 @@ nav ul li a
     transition: color 0.3s ease-out;
 }
 
-footer{
-    position:absolute;
-    text-align: center;
-    bottom: 30px;
-    left: 0;
-    width: 100%;
-    color: white;
-}
-
 /* Project page */
 
 #project-section
@@ -202,7 +199,7 @@ footer{
 
 .project1
 {
-    border: 2px solid #5263FF;
+    border: 3px solid #5263FF;
     width: 100%;
     height: 25rem;
     border-radius: 20px;
@@ -213,7 +210,7 @@ footer{
     margin-bottom: 5px;
 }
 
-.img-poulailler
+.img-project
 {
     width: 100%;
     height: 100%;
@@ -221,15 +218,7 @@ footer{
     object-fit: contain;
 }
 
-.img-logo
-{
-    width: 100%;
-    height: 100%;
-    max-width: 400px;
-    object-fit: contain;
-}
-
-.img-maison-jungle
+.img-jungle
 {
     width: 90%;
     height: 90%;
@@ -243,6 +232,17 @@ footer{
     text-decoration: none;
     font-weight: 400;
     margin-left: 1rem;
+}
+
+/* Contact */
+
+/* Footer */
+
+footer{
+    text-align: center;
+    color: white;
+    padding: 1rem 0;
+    margin-top: auto;
 }
 
 /* Responsive */
@@ -274,12 +274,24 @@ footer{
         font-size: 4vw;
     }
 
+    .btn-group
+    {
+        gap: 2rem;
+    }
+
     .hero-section
     {
-        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin-top: 4rem;
+        margin-bottom: 4rem;
+        height: auto;
+        position: static;
+        transform: none;
+        width: 100%;
     }
+
     .hero-text h1
     {
         margin-top: 35px;
@@ -294,5 +306,12 @@ footer{
     {
         flex-direction: column;
         align-items: center;
+        height: auto;
+        margin-bottom: 4rem;
+    }
+    .project-container
+    {
+        width: 90%;
+        margin-bottom: 2rem;
     }
 }
