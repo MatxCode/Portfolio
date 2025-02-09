@@ -52,6 +52,7 @@ nav ul li a
     color: white;
     font-weight: 700;
     letter-spacing: 0.5px;
+    font-size: 1rem;
 }
 
 /* HERO SECTION */
@@ -362,6 +363,7 @@ label
     background-color: #5263FF;
     margin-top: 2rem;
     box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.78);
+    font-weight: bolder;
 }
 
 .send-button:hover
@@ -397,7 +399,6 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: 25px;
     }
     nav ul li
     {
@@ -407,8 +408,9 @@ footer{
     li{
         list-style: none;
     }
-    .logo-text{
-        font-size: 4vw;
+    #logo
+    {
+        margin-right: 2rem;
     }
 
     .btn-group
@@ -444,7 +446,7 @@ footer{
         flex-direction: column;
         align-items: center;
         height: auto;
-        margin-bottom: 4rem;
+        margin-bottom: 5rem;
     }
     .project-container
     {
@@ -460,6 +462,7 @@ footer{
     {
         height: auto;
         padding-bottom: 2rem;
+        padding-top: 5rem;
     }
     .name-box
     {
