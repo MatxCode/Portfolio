@@ -67,7 +67,6 @@ nav ul li a
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 100vh;
     text-align: center;
 }
 
@@ -181,35 +180,37 @@ footer{
 
 #project-section
 {
-    border: 2px solid red;
     width: 100%;
     height: 65rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 3rem;
+}
+
+.project-container
+{
+    width: 45%;
+}
+
+.project-container h2 {
+    color: #5263FF;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .project1
 {
-    border: 2px solid blue;
-    width: 40%;
+    border: 2px solid #5263FF;
+    width: 100%;
     height: 25rem;
-    margin: 3rem;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-}
-
-.project2
-{
-    border: 2px solid green;
-    width: 40%;
-    margin: 3rem;
-    border-radius: 20px;
-    overflow: hidden;
+    margin-bottom: 5px;
 }
 
 .img-poulailler
@@ -218,6 +219,30 @@ footer{
     height: 100%;
     max-width: 400px;
     object-fit: contain;
+}
+
+.img-logo
+{
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    object-fit: contain;
+}
+
+.img-maison-jungle
+{
+    width: 90%;
+    height: 90%;
+    max-width: 400px;
+    object-fit: contain;
+}
+
+.see-more
+{
+    color: #5263FF;
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 1rem;
 }
 
 /* Responsive */
@@ -267,7 +292,7 @@ footer{
 
     #project-section
     {
-        display: flex;
         flex-direction: column;
+        align-items: center;
     }
 }
