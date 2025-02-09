@@ -247,7 +247,7 @@ nav ul li a
 {
     border: 3px solid #5263FF;
     height: 100%;
-    margin: 5px 20px 20px 20px;
+    margin: 5px 5rem 5rem 5rem;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -354,13 +354,22 @@ label
 
 .send-button
 {
-    border: 3px solid #5263FF;
+    border: 2px solid #5263FF;
     border-radius: 20px;
     width: 10rem;
     height: 3rem;
     color: #FFFFFF;
     background-color: #5263FF;
     margin-top: 2rem;
+    box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.78);
+}
+
+.send-button:hover
+{
+    background-color: #FFFFFF;
+    color: #5263FF;
+    border-color: #FFFFFF;
+    transition: color 0.4s ease;
 }
 
 
@@ -443,8 +452,31 @@ footer{
         margin-bottom: 2rem;
     }
 
-    .name-container
+    .contact-form
+    {
+        margin: 5px 2rem 2rem 2rem;
+    }
+    .contact-container
+    {
+        height: auto;
+        padding-bottom: 2rem;
+    }
+    .name-box
     {
         flex-direction: column;
+        align-items: center;
+    }
+    .name
+    {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .first-last-name
+    {
+        width: 100%;
+    }
+    .send-button
+    {
+        margin-bottom: 2rem;
     }
 }
