@@ -96,7 +96,11 @@ et refléter les dernières tendances du web.
 ![5](https://github.com/user-attachments/assets/c82212fa-74b9-4222-8faa-5dc6102c44a0)
 
 
-## Use case:
+## Use cas
+
+
+![user_stories](https://github.com/user-attachments/assets/8b89f540-b63a-4538-b46b-923bae96bdd7)
+
 
 ## Wireframe:
 
