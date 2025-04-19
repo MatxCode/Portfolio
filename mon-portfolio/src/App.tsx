@@ -31,9 +31,9 @@ function App() {
     <div className="bg-black text-white min-h-screen">
       <Header />
       <main>
-        {/* <Hero />
-        <About />
-        <Projects /> */}
+        <Hero />
+        {/* <About /> */}
+        {/* <Projects /> */}
         {/* <Contact /> */}
       </main>
       {/* <Footer /> */}
