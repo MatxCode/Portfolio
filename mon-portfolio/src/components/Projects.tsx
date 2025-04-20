@@ -77,43 +77,43 @@ const Projects = () => {
     },
     {
       id: 5,
-      title: "E-commerce App",
-      description: "Application e-commerce complète avec panier, paiement et gestion des commandes",
-      image: "/Ecommerce.png",
-      tags: ["React", "Redux", "Node.js"],
-      demoLink: "https://example.com/ecommerce",
-      codeLink: "https://github.com/MatxCode/Ecommerce"
+      title: "SpringAI - Application intelligente avec Spring Boot",
+      description: "SpringAI est une application web basée sur Spring Boot qui intègre les services d’intelligence artificielle d’OpenAI afin de proposer une interface simple et intuitive pour interagir avec un agent conversationnel intelligent.",
+      image: "/spring-ai.png",
+      tags: ["React", "SpringBoot", "API - OpenAi"],
+      demoLink: "https://spring-ai-sand.vercel.app/",
+      codeLink: "https://github.com/MatxCode/SpringAi"
     },
     {
       id: 6,
-      title: "Task Manager",
-      description: "Application de gestion de tâches avec fonctionnalités de drag-and-drop",
-      image: "/TaskManager.png",
-      tags: ["React", "Firebase", "Tailwind CSS"],
-      demoLink: "https://example.com/taskmanager",
-      codeLink: "https://github.com/MatxCode/TaskManager"
+      title: "AudioTranscriber - Transcription audio automatisée",
+      description: "AudioTranscriber est une application web développée avec Spring Boot, permettant aux utilisateurs de transcrire automatiquement des fichiers audio en texte grâce à l’intégration de modèles d’intelligence artificielle.",
+      image: "/spring-ai.png",
+      tags: ["React", "SpringBoot", "API - OpenAi"],
+      demoLink: "#",
+      codeLink: "https://github.com/MatxCode/AudioTranscriber"
     },
     {
       id: 7,
-      title: "Blog Personnel",
-      description: "Blog avec système de gestion de contenu personnalisé",
-      image: "/Blog.png",
-      tags: ["Next.js", "MongoDB", "Vercel"],
-      demoLink: "https://example.com/blog",
-      codeLink: "https://github.com/MatxCode/Blog"
+      title: "WebApp To-Do-List – FastAPI, React & MongoDB",
+      description: "Cette application web fullstack a été développée en combinant FastAPI pour le backend, React pour le frontend, et MongoDB comme base de données. Le but de ce projet était de créer une architecture moderne, performante et évolutive, tout en mettant en place des fonctionnalités concrètes de gestion de données.",
+      image: "/farm-api.png",
+      tags: ["React", "MongoDB", "Docker"],
+      demoLink: "https://farm-api.vercel.app/",
+      codeLink: "https://github.com/MatxCode/FARM-API"
     },
     {
       id: 8,
-      title: "Weather App",
-      description: "Application météo en temps réel avec visualisations interactives",
-      image: "/Weather.png",
-      tags: ["HTML - CSS", "JavaScript", "API"],
-      demoLink: "https://example.com/weather",
-      codeLink: "https://github.com/MatxCode/WeatherApp"
+      title: "Task-Sphere - Application de gestion de projet avec Symfony",
+      description: "ProjectBoard est une application web inspirée de Trello, développée avec Symfony pour permettre la gestion visuelle de projets à travers des tableaux, des colonnes et des cartes. Elle facilite l'organisation des tâches, le suivi de leur avancement et la collaboration entre membres d'une équipe.",
+      image: "/farm-api.png",
+      tags: ["MySql", "Symfony", "Docker"],
+      demoLink: "#",
+      codeLink: "https://github.com/MatxCode/task-sphere"
     },
   ];
 
-  const categories = ["all", "React", "Next.js", "MongoDB", "HTML - CSS", "Vercel"];
+  const categories = ["all", "React", "Next.js", "MongoDB", "HTML - CSS", "Vercel", "Docker"];
   
   const filteredProjects = filter === 'all'
     ? projects
