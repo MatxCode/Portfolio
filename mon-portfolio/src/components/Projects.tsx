@@ -1,4 +1,3 @@
-// src/components/Projects.tsx
 import { useEffect, useRef, useState } from 'react';
 
 interface Project {
@@ -15,6 +14,7 @@ const Projects = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const [isVisible, setIsVisible] = useState(false);
   const [filter, setFilter] = useState<string>('all');
+  const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -42,7 +42,7 @@ const Projects = () => {
     {
       id: 1,
       title: "ESIEA Connectify",
-      description: "ESIEA Connectify est une plateforme sociale conçue pour les étudiants de l’ESIEA, dans le but de favoriser les échanges, la collaboration et le partage d’expériences au sein de la communauté étudiante.",
+      description: "ESIEA Connectify est une plateforme sociale conçue pour les étudiants de l'ESIEA, dans le but de favoriser les échanges, la collaboration et le partage d'expériences au sein de la communauté étudiante.",
       image: "/Connectify.png",
       tags: ["Next.js", "MongoDB", "Vercel"],
       demoLink: "https://esiea-connectify.vercel.app/",
@@ -60,7 +60,7 @@ const Projects = () => {
     {
       id: 3,
       title: "MyRestaurant - Site Vitrine",
-      description: "MyRestaurant est un site vitrine responsive développé pour un restaurant fictif. Il met en valeur l’identité visuelle du restaurant à travers un design épuré et moderne, avec une navigation fluide et une structure claire.",
+      description: "MyRestaurant est un site vitrine responsive développé pour un restaurant fictif. Il met en valeur l'identité visuelle du restaurant à travers un design épuré et moderne, avec une navigation fluide et une structure claire.",
       image: "/MyRestaurant.png",
       tags: ["HTML - CSS", "JavaScript", "Bootstrap"],
       demoLink: "https://matxcode.github.io/MyRestaurant/index.html",
@@ -72,8 +72,44 @@ const Projects = () => {
       description: "Un site portfolio moderne avec animations et design responsive",
       image: "/Portfolio.png",
       tags: ["React", "Tailwind CSS", "Framer Motion"],
-      demoLink: "#",
+      demoLink: "https://portfolio-mateo-letertre.vercel.app/",
       codeLink: "https://github.com/MatxCode/Portfolio"
+    },
+    {
+      id: 5,
+      title: "E-commerce App",
+      description: "Application e-commerce complète avec panier, paiement et gestion des commandes",
+      image: "/Ecommerce.png",
+      tags: ["React", "Redux", "Node.js"],
+      demoLink: "https://example.com/ecommerce",
+      codeLink: "https://github.com/MatxCode/Ecommerce"
+    },
+    {
+      id: 6,
+      title: "Task Manager",
+      description: "Application de gestion de tâches avec fonctionnalités de drag-and-drop",
+      image: "/TaskManager.png",
+      tags: ["React", "Firebase", "Tailwind CSS"],
+      demoLink: "https://example.com/taskmanager",
+      codeLink: "https://github.com/MatxCode/TaskManager"
+    },
+    {
+      id: 7,
+      title: "Blog Personnel",
+      description: "Blog avec système de gestion de contenu personnalisé",
+      image: "/Blog.png",
+      tags: ["Next.js", "MongoDB", "Vercel"],
+      demoLink: "https://example.com/blog",
+      codeLink: "https://github.com/MatxCode/Blog"
+    },
+    {
+      id: 8,
+      title: "Weather App",
+      description: "Application météo en temps réel avec visualisations interactives",
+      image: "/Weather.png",
+      tags: ["HTML - CSS", "JavaScript", "API"],
+      demoLink: "https://example.com/weather",
+      codeLink: "https://github.com/MatxCode/WeatherApp"
     },
   ];
 
@@ -82,6 +118,16 @@ const Projects = () => {
   const filteredProjects = filter === 'all'
     ? projects
     : projects.filter(project => project.tags.includes(filter));
+
+  // Determine which projects to display based on filter and showAll state
+  const displayedProjects = filter === 'all' && !showAll 
+    ? filteredProjects.slice(0, 4) 
+    : filteredProjects;
+
+  const handleShowAllClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    setShowAll(true);
+  };
 
   return (
     <section 
@@ -98,7 +144,15 @@ const Projects = () => {
           {categories.map((category, index) => (
             <button
               key={index}
-              onClick={() => setFilter(category)}
+              onClick={() => {
+                setFilter(category);
+                // Reset showAll when changing filters
+                if (category !== 'all') {
+                  setShowAll(true);
+                } else {
+                  setShowAll(false);
+                }
+              }}
               className={`px-4 py-2 rounded-full transition-all ${
                 filter === category
                   ? 'bg-gradient-to-r from-purple-500 to-pink-600 text-white'
@@ -111,7 +165,7 @@ const Projects = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-          {filteredProjects.map((project, index) => (
+          {displayedProjects.map((project, index) => (
             <div 
               key={project.id}
               className={`bg-gray-900 rounded-lg overflow-hidden shadow-lg transition-all duration-500 transform hover:-translate-y-2 hover:shadow-purple-500/20 transition-all duration-1000 delay-${index * 100 + 200} ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
@@ -143,12 +197,16 @@ const Projects = () => {
                 <div className="flex space-x-4">
                   <a 
                     href={project.demoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="px-4 py-2 bg-purple-600 rounded text-sm font-medium hover:bg-purple-700 transition-colors"
                   >
                     Démo
                   </a>
                   <a 
                     href={project.codeLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="px-4 py-2 border border-purple-600 rounded text-sm font-medium hover:bg-purple-600/10 transition-colors"
                   >
                     Code
@@ -159,14 +217,17 @@ const Projects = () => {
           ))}
         </div>
         
-        <div className={`text-center mt-12 transition-all duration-1000 delay-600 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-          <a 
-            href="#"
-            className="px-6 py-3 border border-purple-500 rounded-md font-medium hover:bg-purple-500/10 transition-colors inline-block"
-          >
-            Voir tous les projets
-          </a>
-        </div>
+        {filter === 'all' && !showAll && filteredProjects.length > 4 && (
+          <div className={`text-center mt-12 transition-all duration-1000 delay-600 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+            <a 
+              href="#"
+              onClick={handleShowAllClick}
+              className="px-6 py-3 border border-purple-500 rounded-md font-medium hover:bg-purple-500/10 transition-colors inline-block"
+            >
+              Voir tous les projets
+            </a>
+          </div>
+        )}
       </div>
     </section>
   );
