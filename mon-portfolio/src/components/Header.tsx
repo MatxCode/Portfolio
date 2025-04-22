@@ -98,9 +98,10 @@ const Header = () => {
             Contact
           </a>
           <a
-            href="#"
+            href="LETERTRE_Matéo_CV.pdf"
             className="bg-gradient-to-r from-purple-500 to-pink-600 px-6 py-3 rounded-md hover:opacity-90 transition-opacity text-white mt-4"
             onClick={closeMenu}
+            target="_blank"
           >
             Télécharger mon CV
           </a>

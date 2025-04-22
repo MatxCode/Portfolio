@@ -129,7 +129,7 @@ const Contact = () => {
                 </div>
                 <div className="text-left">
                   <h4 className="text-lg font-medium">Site web</h4>
-                  <a href="https://portfolio-mateo-letertre.vercel.app/" className="text-gray-400 hover:text-purple-400">
+                  <a href="https://mateo-letertre.vercel.app/" className="text-gray-400 hover:text-purple-400">
                     mateo-letertre.vercel.app
                   </a>
                 </div>

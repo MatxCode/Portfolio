@@ -50,33 +50,24 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "HairLab - Site de réservation en ligne",
-      description: "HairLab est un site web moderne conçu pour un salon de coiffure afin de permettre aux clients de réserver leurs rendez-vous en ligne de manière simple et rapide. L'interface a été pensée pour offrir une expérience fluide, à la fois pour les utilisateurs et les gérants du salon.",
-      image: "/Hairlab.png",
-      tags: ["HTML - CSS", "PHP", "MySql"],
-      demoLink: "#",
-      codeLink: "https://github.com/MatxCode/HairLab"
+      title: "Task-Sphere - Application de gestion de projet avec Symfony",
+      description: "ProjectBoard est une application web inspirée de Trello, développée avec Symfony pour permettre la gestion visuelle de projets à travers des tableaux, des colonnes et des cartes. Elle facilite l'organisation des tâches, le suivi de leur avancement et la collaboration entre membres d'une équipe.",
+      image: "/farm-api.png",
+      tags: ["MySql", "Symfony", "Docker"],
+      demoLink: "https://task-sphere.up.railway.app",
+      codeLink: "https://github.com/MatxCode/task-sphere"
     },
     {
       id: 3,
-      title: "MyRestaurant - Site Vitrine",
-      description: "MyRestaurant est un site vitrine responsive développé pour un restaurant fictif. Il met en valeur l'identité visuelle du restaurant à travers un design épuré et moderne, avec une navigation fluide et une structure claire.",
-      image: "/MyRestaurant.png",
-      tags: ["HTML - CSS", "JavaScript", "Bootstrap"],
-      demoLink: "https://matxcode.github.io/MyRestaurant/index.html",
-      codeLink: "https://github.com/MatxCode/MyRestaurant"
-    },
-    {
-      id: 4,
       title: "Portfolio personnel",
       description: "Un site portfolio moderne avec animations et design responsive",
       image: "/Portfolio.png",
       tags: ["React", "Tailwind CSS", "Framer Motion"],
-      demoLink: "https://portfolio-mateo-letertre.vercel.app/",
+      demoLink: "https://mateo-letertre.vercel.app/",
       codeLink: "https://github.com/MatxCode/Portfolio"
     },
     {
-      id: 5,
+      id: 4,
       title: "SpringAI - Application intelligente avec Spring Boot",
       description: "SpringAI est une application web basée sur Spring Boot qui intègre les services d’intelligence artificielle d’OpenAI afin de proposer une interface simple et intuitive pour interagir avec un agent conversationnel intelligent.",
       image: "/spring-ai.png",
@@ -85,16 +76,7 @@ const Projects = () => {
       codeLink: "https://github.com/MatxCode/SpringAi"
     },
     {
-      id: 6,
-      title: "AudioTranscriber - Transcription audio automatisée",
-      description: "AudioTranscriber est une application web développée avec Spring Boot, permettant aux utilisateurs de transcrire automatiquement des fichiers audio en texte grâce à l’intégration de modèles d’intelligence artificielle.",
-      image: "/spring-ai.png",
-      tags: ["React", "SpringBoot", "API - OpenAi"],
-      demoLink: "#",
-      codeLink: "https://github.com/MatxCode/AudioTranscriber"
-    },
-    {
-      id: 7,
+      id: 5,
       title: "WebApp To-Do-List – FastAPI, React & MongoDB",
       description: "Cette application web fullstack a été développée en combinant FastAPI pour le backend, React pour le frontend, et MongoDB comme base de données. Le but de ce projet était de créer une architecture moderne, performante et évolutive, tout en mettant en place des fonctionnalités concrètes de gestion de données.",
       image: "/farm-api.png",
@@ -103,13 +85,31 @@ const Projects = () => {
       codeLink: "https://github.com/MatxCode/FARM-API"
     },
     {
+      id: 6,
+      title: "HairLab - Site de réservation en ligne",
+      description: "HairLab est un site web moderne conçu pour un salon de coiffure afin de permettre aux clients de réserver leurs rendez-vous en ligne de manière simple et rapide. L'interface a été pensée pour offrir une expérience fluide, à la fois pour les utilisateurs et les gérants du salon.",
+      image: "/Hairlab.png",
+      tags: ["HTML - CSS", "PHP", "MySql"],
+      demoLink: "https://hairlab.up.railway.app/",
+      codeLink: "https://github.com/MatxCode/HairLab"
+    },
+    {
+      id: 7,
+      title: "MyRestaurant - Site Vitrine",
+      description: "MyRestaurant est un site vitrine responsive développé pour un restaurant fictif. Il met en valeur l'identité visuelle du restaurant à travers un design épuré et moderne, avec une navigation fluide et une structure claire.",
+      image: "/MyRestaurant.png",
+      tags: ["HTML - CSS", "JavaScript", "Bootstrap"],
+      demoLink: "https://matxcode.github.io/MyRestaurant/index.html",
+      codeLink: "https://github.com/MatxCode/MyRestaurant"
+    },
+    {
       id: 8,
-      title: "Task-Sphere - Application de gestion de projet avec Symfony",
-      description: "ProjectBoard est une application web inspirée de Trello, développée avec Symfony pour permettre la gestion visuelle de projets à travers des tableaux, des colonnes et des cartes. Elle facilite l'organisation des tâches, le suivi de leur avancement et la collaboration entre membres d'une équipe.",
-      image: "/farm-api.png",
-      tags: ["MySql", "Symfony", "Docker"],
-      demoLink: "https://task-sphere.up.railway.app",
-      codeLink: "https://github.com/MatxCode/task-sphere"
+      title: "AudioTranscriber - Transcription audio automatisée",
+      description: "AudioTranscriber est une application web développée avec Spring Boot, permettant aux utilisateurs de transcrire automatiquement des fichiers audio en texte grâce à l’intégration de modèles d’intelligence artificielle.",
+      image: "/spring-ai.png",
+      tags: ["React", "SpringBoot", "API - OpenAi"],
+      demoLink: "#",
+      codeLink: "https://github.com/MatxCode/AudioTranscriber"
     },
   ];
 
