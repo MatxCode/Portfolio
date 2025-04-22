@@ -52,7 +52,7 @@ const Projects = () => {
       id: 2,
       title: "HairLab - Site de réservation en ligne",
       description: "HairLab est un site web moderne conçu pour un salon de coiffure afin de permettre aux clients de réserver leurs rendez-vous en ligne de manière simple et rapide. L'interface a été pensée pour offrir une expérience fluide, à la fois pour les utilisateurs et les gérants du salon.",
-      image: "/MyRestaurant.png",
+      image: "/Hairlab.png",
       tags: ["HTML - CSS", "PHP", "MySql"],
       demoLink: "#",
       codeLink: "https://github.com/MatxCode/HairLab"
@@ -108,7 +108,7 @@ const Projects = () => {
       description: "ProjectBoard est une application web inspirée de Trello, développée avec Symfony pour permettre la gestion visuelle de projets à travers des tableaux, des colonnes et des cartes. Elle facilite l'organisation des tâches, le suivi de leur avancement et la collaboration entre membres d'une équipe.",
       image: "/farm-api.png",
       tags: ["MySql", "Symfony", "Docker"],
-      demoLink: "#",
+      demoLink: "https://task-sphere.up.railway.app",
       codeLink: "https://github.com/MatxCode/task-sphere"
     },
   ];
